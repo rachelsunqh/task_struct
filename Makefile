@@ -4,5 +4,5 @@ obj-m :=list_pro.o
 all:
 	$(MAKE) -C $(KDIR) SUBDIRS=$(PWD) modules -Wformat
 clean:
-	rm *.o *.mod.* *.ko *.gcno *.order
+	rm -rf *.o *.mod.* *.ko *.gcno *.order *.dwo
 
